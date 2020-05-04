@@ -1,0 +1,17 @@
+/*
+|--------------------------------------------------------------------------
+| Button
+|--------------------------------------------------------------------------
+| @namespace: rgs-
+|
+*/
+@import "../../../styles/app";
+
+.rgs-Button {
+  align-items: center;
+  display: flex;
+}
+
+.rgs-Button_Inner {
+  @include Grid_Container;
+}
