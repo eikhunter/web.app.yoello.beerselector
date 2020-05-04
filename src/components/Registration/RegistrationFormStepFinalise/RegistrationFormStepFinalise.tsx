@@ -36,7 +36,10 @@ class RegistrationFormStepFinalise extends React.Component<Props> {
                     <li className="rgs-FormStepFinalise_Item">
                         <RegistrationSummaryItem
                             field="Role"
-                            value={registerStore.fields.role.value}
+                            value={registerStore.fields.role.value.length > 0
+                                ? registerStore.fields.role.value.length
+                                : 'N/A'
+                            }
                         />
                     </li>
                 </ul>
