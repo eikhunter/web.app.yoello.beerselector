@@ -1,23 +1,14 @@
 /*
 |--------------------------------------------------------------------------
-| Label
+| Summary item
 |--------------------------------------------------------------------------
-| @namespace: frm-
+| @namespace: rgs-
 |
 */
-.frm-Label {
+.rgs-SummaryItem_Title {
   font-size: 12px;
   line-height: 24px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-
-  .frm-Item-checkbox & {
-    align-items: center;
-    display: flex;
-    text-transform: initial;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0;
-  }
 }

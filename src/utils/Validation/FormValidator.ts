@@ -20,6 +20,11 @@ export const FormValidator = async (fields: FormValidatorFields, messages?: { [k
         }
     });
 
+    Validator.register('password', (field: any) => {
+        const pattern = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{9,})");
+        return pattern.test(field.trim());
+    }, 'Password not strong enough');
+
     const validation = new Validator(values, rules, messages);
 
     try {
@@ -29,9 +34,7 @@ export const FormValidator = async (fields: FormValidatorFields, messages?: { [k
             }, () => {
                 Object.keys(fields).forEach(field => {
                     const error = validation.errors.first(field);
-                    if (typeof error === 'string') {
-                        fields[field].error = error;
-                    }
+                    fields[field].error = typeof error === 'string' ? error : '';
                 });
                 reject(false);
             });

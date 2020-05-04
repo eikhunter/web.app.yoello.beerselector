@@ -20,7 +20,7 @@ interface Props {
 }
 
 const initialState = (registerStore: RegisterStore) => ({
-    activeStepIndex: 1,
+    activeStepIndex: 0,
     formSteps: [
         {
             id: 0,

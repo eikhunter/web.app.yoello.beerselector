@@ -21,7 +21,7 @@ export default class RegisterStore {
         },
         password: {
             error: '',
-            rule: 'required',
+            rule: 'required|password',
             value: ''
         },
         preferenceProduct: {
