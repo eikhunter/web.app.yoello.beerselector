@@ -23,6 +23,16 @@ export default class RegisterStore {
             error: '',
             rule: 'required',
             value: ''
+        },
+        preferenceProduct: {
+            error: '',
+            rule: '',
+            value: ''
+        },
+        preferenceTeam: {
+            error: '',
+            rule: '',
+            value: ''
         }
     };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './RegistrationProgressItem.scss';
+import Arrow from '../../../assets/svg/Arrow';
 import Tick from '../../../assets/svg/Tick';
 
 interface Props {
@@ -22,6 +23,10 @@ const RegistrationProgressItem: React.FC<Props> = ({ completed, stepNumber, titl
                 </span>
             </div>
             <p className="rgs-ProgressItem_Text">{title}</p>
+
+            <span className="rgs-ProgressItem_Arrow">
+                <Arrow/>
+            </span>
         </div>
     );
 };

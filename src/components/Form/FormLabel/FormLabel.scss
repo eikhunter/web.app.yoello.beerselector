@@ -8,8 +8,17 @@
 .frm-Label {
   font-size: 12px;
   line-height: 24px;
-  font-weight: 700;
-  text-align: center;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: left;
+
+  .frm-Item-checkbox & {
+    align-items: center;
+    display: flex;
+    text-transform: initial;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
 }

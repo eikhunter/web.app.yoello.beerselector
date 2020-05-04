@@ -17,6 +17,13 @@
   font-size: 16px;
   background-color: #fff;
 
+  .frm-Item-checkbox & {
+    flex-shrink: 0;
+    width: 14px;
+    height: 16px;
+    margin: 0 var(--Grid_Gutter) 0 0;
+  }
+
   &::placeholder {
     font-size: 16px;
   }

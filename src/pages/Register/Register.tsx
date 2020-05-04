@@ -6,6 +6,8 @@ import RegisterStore from '../../stores/RegisterStore';
 import RegistrationForm from '../../components/Registration/RegistrationForm/RegistrationForm';
 import RegistrationFormStepDetails
     from '../../components/Registration/RegistrationFormStepDetails/RegistrationFormStepDetails';
+import RegistrationFormStepFinalise
+    from '../../components/Registration/RegistrationFormStepFinalise/RegistrationFormStepFinalise';
 import RegistrationFormStepPrivacy
     from '../../components/Registration/RegistrationFormStepPrivacy/RegistrationFormStepPrivacy';
 import RegistrationProgress
@@ -18,7 +20,7 @@ interface Props {
 }
 
 const initialState = (registerStore: RegisterStore) => ({
-    activeStepIndex: 0,
+    activeStepIndex: 1,
     formSteps: [
         {
             id: 0,
@@ -29,10 +31,16 @@ const initialState = (registerStore: RegisterStore) => ({
         {
             id: 1,
             completed: false,
-            component: <RegistrationFormStepPrivacy/>,
+            component: <RegistrationFormStepPrivacy registerStore={registerStore}/>,
             title: 'Privacy'
+        },
+        {
+            id: 2,
+            completed: false,
+            component: <RegistrationFormStepFinalise registerStore={registerStore}/>,
+            title: 'Finalise'
         }
-    ]
+    ] // Create the steps, you can adjust the title and the component used, and change the order
 });
 
 type State = ReturnType<typeof initialState>;

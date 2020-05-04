@@ -8,6 +8,8 @@ interface Props {
     label: string;
     name: string;
     onInputChange: (value: string, fieldName: string) => void;
+    checkbox?: boolean,
+    checked?: boolean;
     disabled?: boolean;
     inputType?: string;
     required?: boolean;
@@ -16,22 +18,25 @@ interface Props {
 
 const FormInput: React.FC<Props> = ({
                                         label,
+                                        name,
                                         onInputChange,
+                                        checkbox,
+                                        checked,
                                         disabled,
                                         inputType,
-                                        name,
                                         required,
                                         value
                                     }) => {
     return (
-        <FormLabel label={label} required={required}>
+        <FormLabel checkbox={checkbox} label={label} required={required}>
             <input
                 className="frm-Input"
                 onChange={(e) => onInputChange(e.target.value, name)}
                 disabled={disabled}
-                type={inputType}
+                type={checkbox ? 'checkbox' : inputType}
                 name={name}
                 value={value}
+                checked={checked}
             />
         </FormLabel>
     );

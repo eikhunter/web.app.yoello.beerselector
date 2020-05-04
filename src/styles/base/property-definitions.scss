@@ -11,9 +11,10 @@
   --Color_Grey: #9d9d9d;
   --Color_Grey-light: #f7f7fc;
   --Color_Border: #d5d5d5;
+  --Color_Green: #61d562;
 
   --Color_Anchor: var(--Color_Brand);
-  --Color_Error: #d14242;
+  --Color_Error: #d13438;
 
   /*
   |--------------------------------------------------------------------------
@@ -46,6 +47,6 @@
   */
   --Box_Shadow: 0 2px 20px 1px rgba(0, 0, 0, 0.10);
   --Global_Radius: 4px;
-  --Global_Transition: 0.3s;
+  --Global_Transition: 0.35s;
   --Transition_EaseOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.075);
 }
