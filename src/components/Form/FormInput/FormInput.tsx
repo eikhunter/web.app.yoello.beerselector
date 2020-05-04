@@ -1,14 +1,39 @@
 import React from 'react'
 
-interface Props {
+import FormLabel from '../FormLabel/FormLabel';
 
+import './FormInput.scss';
+
+interface Props {
+    label: string;
+    name: string;
+    onInputChange: (value: string, fieldName: string) => void;
+    disabled?: boolean;
+    inputType?: string;
+    required?: boolean;
+    value?: string;
 }
 
-const FormInput: React.FC = ({}) => {
+const FormInput: React.FC<Props> = ({
+                                        label,
+                                        onInputChange,
+                                        disabled,
+                                        inputType,
+                                        name,
+                                        required,
+                                        value
+                                    }) => {
     return (
-        <div className="frm-Input">
-
-        </div>
+        <FormLabel label={label} required={required}>
+            <input
+                className="frm-Input"
+                onChange={(e) => onInputChange(e.target.value, name)}
+                disabled={disabled}
+                type={inputType}
+                name={name}
+                value={value}
+            />
+        </FormLabel>
     );
 };
 

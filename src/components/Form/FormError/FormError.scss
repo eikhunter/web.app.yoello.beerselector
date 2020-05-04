@@ -1,0 +1,27 @@
+/*
+|--------------------------------------------------------------------------
+| Error
+|--------------------------------------------------------------------------
+| @namespace: frm-
+|
+*/
+.frm-Error {
+  position: relative;
+  z-index: -1;
+  height: 12px;
+  margin-top: 8px;
+  opacity: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 12px;
+  visibility: hidden;
+  transform: translateY(-100%);
+  color: var(--Color_Error);
+}
+
+.frm-Error-active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--Global_Transition), visibility var(--Global_Transition), transform var(--Global_Transition);
+}

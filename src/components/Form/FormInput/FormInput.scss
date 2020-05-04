@@ -1,0 +1,27 @@
+/*
+|--------------------------------------------------------------------------
+| Input
+|--------------------------------------------------------------------------
+| @namespace: frm-
+|
+*/
+.frm-Input {
+  display: block;
+  width: 100%;
+  padding: 10px var(--Grid_Gutter);
+  border-width: 1px;
+  border-color: var(--Color_Border);
+  border-style: solid;
+  box-shadow: none;
+  transition: border-color var(--Global_Transition);
+  font-size: 16px;
+  background-color: #fff;
+
+  &::placeholder {
+    font-size: 16px;
+  }
+
+  &:focus {
+    border-color: var(--Color_Brand);
+  }
+}

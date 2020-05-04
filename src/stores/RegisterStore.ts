@@ -1,47 +1,37 @@
 import { observable, action } from 'mobx';
 
-import { Car } from '../models/Car';
+import { FormValidator, FormValidatorFields } from '../utils/Validation/FormValidator';
 
-export default class CarsStore {
-    @observable cars: Car[]; // List of cards
-    @observable loading: boolean; // Loading list of cars
-    @observable loadingCar: boolean; // Loading car detail
-    @observable selectedCar?: Car; // Store the car that is selected
-
-    constructor() {
-        this.cars = [];
-        this.loading = true;
-        this.loadingCar = true;
-    }
-
-    @action async load (): Promise<void> {
-        try {
-            this.loading = true;
-
-            // Create a fetch function that takes parameters so code isn't repeated for each http request
-            const response = await fetch('https://warm-dawn-92320.herokuapp.com/models');
-            this.cars = await response.json();
-
-            this.loading = false;
-        } catch (e) {
-            // Add more error handling here - i.e. Pop up with instruction on how to fix
-            return e;
+export default class RegisterStore {
+    @observable fields: FormValidatorFields = {
+        name: {
+            error: '',
+            rule: 'required',
+            value: ''
+        },
+        role: {
+            error: '',
+            rule: '',
+            value: ''
+        },
+        email: {
+            error: '',
+            rule: 'required|email',
+            value: ''
+        },
+        password: {
+            error: '',
+            rule: 'required',
+            value: ''
         }
-    }
+    };
 
-    @action async loadCarById(id: string): Promise<void> {
-        // Would move this into a separate store but for time sake i am keeping it in the same store as the listing page
-        try {
-            this.loadingCar = true;
+    @action onInputChange = (value: string, fieldName: string,): void => {
+        this.fields[fieldName].value = value;
+        this.fields[fieldName].error = '';
+    };
 
-            const response = await fetch(`https://warm-dawn-92320.herokuapp.com/model/${id}`);
-            this.selectedCar = await response.json();
-            console.log(this.selectedCar);
-
-            this.loadingCar = false;
-        } catch (e) {
-            // Add more error handling here - i.e. Pop up with instruction on how to fix
-            return e;
-        }
-    }
+    @action validate = async (): Promise<boolean> => {
+        return await FormValidator(this.fields);
+    };
 }

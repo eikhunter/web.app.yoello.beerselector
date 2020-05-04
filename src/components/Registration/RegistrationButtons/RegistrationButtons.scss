@@ -1,17 +1,15 @@
 /*
 |--------------------------------------------------------------------------
-| Button
+| Buttons
 |--------------------------------------------------------------------------
 | @namespace: rgs-
 |
 */
 @import "../../../styles/app";
 
-.rgs-Button {
+.rgs-Buttons_Body {
+  justify-content: space-between;
   align-items: center;
   display: flex;
-}
-
-.rgs-Button_Inner {
-  @include Grid_Container;
+  width: 100%;
 }

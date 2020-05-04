@@ -1,53 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-import RegisterStore from '../../../stores/RegisterStore';
-
-import FormItem from '../../Form/FormItem/FormItem';
-import FormContainer from '../../Form/FormContainer/FormContainer';
+import './RegistrationFormStep.scss';
 
 interface Props {
-    registerStore: RegisterStore;
+    form: React.ReactNode;
+    title: string;
 }
 
-const RegistrationFormPerson: React.FC<Props> = ({ registerStore }) => {
+const RegistrationFormStep: React.FC<Props> = ({
+                                                   form,
+                                                   title
+                                               }) => {
     return (
-        <FormContainer>
-            <FormItem
-                label="Name"
-                onInputChange={registerStore.onInputChange}
-                inputType="text"
-                name="name"
-                required
-                value={registerStore.fields.name.value}
-            />
+        <div className="rgs-FormStep">
+            <h2 className="rgs-FormStep_Title">{title}</h2>
 
-            <FormItem
-                label="Role"
-                onInputChange={registerStore.onInputChange}
-                inputType="text"
-                name="role"
-                value={registerStore.fields.role.value}
-            />
-
-            <FormItem
-                label="Email"
-                onInputChange={registerStore.onInputChange}
-                inputType="email"
-                name="email"
-                required
-                value={registerStore.fields.email.value}
-            />
-
-            <FormItem
-                label="Password"
-                onInputChange={registerStore.onInputChange}
-                inputType="password"
-                name="password"
-                required
-                value={registerStore.fields.password.value}
-            />
-        </FormContainer>
+            <div className="rgs-FormStep_Body">
+                {form}
+            </div>
+        </div>
     );
 };
 
-export default RegistrationFormPerson;
+export default RegistrationFormStep;

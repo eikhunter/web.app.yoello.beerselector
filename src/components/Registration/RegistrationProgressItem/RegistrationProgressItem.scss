@@ -1,0 +1,55 @@
+/*
+|--------------------------------------------------------------------------
+| Progress item
+|--------------------------------------------------------------------------
+| @namespace: rgs-
+|
+*/
+.rgs-ProgressItem {
+  align-items: center;
+  display: flex;
+}
+
+.rgs-ProgressItem_Text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rgs-ProgressItem_Number {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid var(--Color_Brand);
+  border-radius: 100%;
+}
+
+.rgs-ProgressItem_Icon {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  opacity: 0;
+  fill: var(--Color_Brand);
+  transition: opacity var(--Global_Transition);
+
+  svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  .rgs-ProgressItem-completed & {
+    opacity: 1;
+  }
+}

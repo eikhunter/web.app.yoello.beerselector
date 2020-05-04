@@ -1,0 +1,18 @@
+/*
+|--------------------------------------------------------------------------
+| Register
+|--------------------------------------------------------------------------
+| @namespace: rgs-
+|
+*/
+.rgs-Register_Body {
+  display: flex;
+}
+
+.rgs-Register_Main {
+  flex-grow: 1;
+}
+
+.rgs-Register_Aside {
+  flex-shrink: 0;
+}
