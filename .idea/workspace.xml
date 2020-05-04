@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56fa6fd4-7d3b-4cda-ba88-202054f36035" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Registration/RegistrationFormStepFinalise/RegistrationFormStepFinalise.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Registration/RegistrationSummaryItem/RegistrationSummaryItem.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Registration/RegistrationSummaryItem/RegistrationSummaryItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Form/FormLabel/FormLabel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/FormLabel/FormLabel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Registration/RegistrationFormStepFinalise/RegistrationFormStepFinalise.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registration/RegistrationFormStepFinalise/RegistrationFormStepFinalise.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Registration/RegistrationFormStepPrivacy/RegistrationFormStepPrivacy.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registration/RegistrationFormStepPrivacy/RegistrationFormStepPrivacy.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/Validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/Validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/FormCheckbox/FormCheckbox.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/FormItem/FormItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/FormItem/FormItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Register/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Register/Register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/RegisterStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/RegisterStore.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Validation/FormValidator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Validation/FormValidator.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588586938110</updated>
-      <workItem from="1588586941337" duration="32011000" />
+      <workItem from="1588586941337" duration="32370000" />
     </task>
     <servers />
   </component>

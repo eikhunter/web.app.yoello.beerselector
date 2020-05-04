@@ -40,7 +40,7 @@ const initialState = (registerStore: RegisterStore) => ({
             component: <RegistrationFormStepFinalise registerStore={registerStore}/>,
             title: 'Finalise'
         }
-    ] // Create the steps, you can adjust the title and the component used, and change the order
+    ]
 });
 
 type State = ReturnType<typeof initialState>;
