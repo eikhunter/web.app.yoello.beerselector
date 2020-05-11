@@ -63,6 +63,7 @@ class Products extends React.Component<Props, State> {
         const { productsStore } = this.props;
         const { activeTabIndex, basketOpen, modalOpen } = this.state;
         const basketItems = productsStore.basketItems;
+        const basketTotal = productsStore.basketTotal;
         const selectedProduct = productsStore.selectedProduct;
         const views = productsStore.views;
 
@@ -109,6 +110,7 @@ class Products extends React.Component<Props, State> {
                 <ProductBasket
                     active={basketItems.length > 0}
                     basketItems={basketItems}
+                    basketTotal={basketTotal}
                     deleteBasketItem={productsStore.deleteProductFromBasket}
                     closeBasket={this._closeBasket}
                     open={basketOpen}

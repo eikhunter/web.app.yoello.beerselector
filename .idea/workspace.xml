@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56fa6fd4-7d3b-4cda-ba88-202054f36035" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductBasket/ProductBasket.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductBasket/ProductBasket.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductBasket/ProductBasket.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductBasket/ProductBasket.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductBasketItem/ProductBasketItem.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductBasketItem/ProductBasketItem.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductCard/ProductCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductCard/ProductCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductCard/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductCard/ProductCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Product/ProductList/ProductList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductList/ProductList.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Products/Products.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products/Products.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/ProductsStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/ProductsStore.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -59,17 +51,18 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/components/Layout" />
+      <recent name="$PROJECT_DIR$/src/stores" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Layout" />
       <recent name="$PROJECT_DIR$/src/components/Product/ProductList" />
       <recent name="$PROJECT_DIR$/src/assets/svg" />
       <recent name="$PROJECT_DIR$/src/components/Form" />
       <recent name="$PROJECT_DIR$/src/__tests__" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/Layout" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/stores" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -97,7 +90,7 @@
       <workItem from="1588586941337" duration="33278000" />
       <workItem from="1589187537347" duration="11744000" />
       <workItem from="1589200471575" duration="16314000" />
-      <workItem from="1589233450547" duration="951000" />
+      <workItem from="1589233450547" duration="2190000" />
     </task>
     <servers />
   </component>
@@ -119,6 +112,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/__tests__/utils/CurrencyFormatter.test.ts</url>
+          <line>13</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="dart-exception" />
       </default-breakpoints>

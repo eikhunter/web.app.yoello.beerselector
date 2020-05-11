@@ -4,6 +4,7 @@ import './ProductCard.scss';
 import Arrow from '../../../assets/svg/Arrow';
 
 interface Props {
+    abv: number;
     imageUrl: string;
     name: string;
     tagline: string;
@@ -11,7 +12,7 @@ interface Props {
     small?: boolean;
 }
 
-const ProductCard: React.FC<Props> = ({ imageUrl, name, tagline, deleteItem, small }) => {
+const ProductCard: React.FC<Props> = ({ abv, imageUrl, name, tagline, deleteItem, small }) => {
     return (
         <div className={small ? 'prd-Card prd-Card-small' : 'prd-Card'}>
             <div className="prd-Card_ImageContainer">
@@ -19,7 +20,7 @@ const ProductCard: React.FC<Props> = ({ imageUrl, name, tagline, deleteItem, sma
             </div>
 
             <div className="prd-Card_Body">
-                <h4 className="prd-Card_Title">{name}</h4>
+                <h4 className="prd-Card_Title">{`${name} (${abv}%)`}</h4>
                 <p className="prd-Card_Text">{tagline}</p>
                 <p className="prd-Card_Link">Learn more
                     <Arrow/>

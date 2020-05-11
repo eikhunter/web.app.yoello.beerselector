@@ -1,4 +1,4 @@
-import { action, observable } from 'mobx';
+import { action, computed, observable } from 'mobx';
 
 import Beer from '../constants/Beer';
 import TabView from '../constants/TabView';
@@ -55,12 +55,15 @@ export default class ProductsStore {
         }
     }
 
+    @computed get basketTotal(): number {
+        return this.basketItems.reduce((a, b) => a + (b['abv'] || 0), 0);
+    }
+
     @action addProductToBasket = (product: Beer) => this.basketItems.push(product);
 
     @action deleteProductFromBasket = (index: number) => {
-        console.log(index);
         this.basketItems.splice(index, 1);
-    }
+    };
 
     @action onSelectProduct = (product: Beer) => this.selectedProduct = product;
 }

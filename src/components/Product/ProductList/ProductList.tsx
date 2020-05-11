@@ -23,6 +23,7 @@ const ProductList: React.FC<Props> = ({ onClickProduct, products }) => {
                                 onClick={() => onClickProduct(product)}
                             >
                                 <ProductCard
+                                    abv={product.abv}
                                     imageUrl={product.image_url}
                                     name={product.name}
                                     tagline={product.tagline}

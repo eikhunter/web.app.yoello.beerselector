@@ -20,7 +20,7 @@ const ProductModal: React.FC<Props> = ({ addProductToBasket, product }) => {
             </header>
 
             <div className="prd-Modal_Body">
-                <h4 className="prd-Modal_Title">{product.name}</h4>
+                <h4 className="prd-Modal_Title">{`${product.name} (${product.abv}%)`}</h4>
                 <p className="prd-Modal_Tag">{product.tagline}</p>
 
                 <p className="prd-Modal_Subtitle">Perfect with</p>

@@ -5,17 +5,27 @@ import ProductCard from '../ProductCard/ProductCard';
 
 import './ProductBasket.scss';
 import Button from '../../Layout/Button/Button';
+import {currencyFormat} from '../../../utils/currencyFormat';
 
 interface Props {
     active: boolean;
     basketItems: Beer[];
+    basketTotal: number;
     closeBasket: () => void;
     deleteBasketItem: (index: number) => void;
     open: boolean;
     openBasket: () => void;
 }
 
-const ProductBasket: React.FC<Props> = ({ active, closeBasket, basketItems, deleteBasketItem, open, openBasket }) => {
+const ProductBasket: React.FC<Props> = ({
+                                            active,
+                                            closeBasket,
+                                            basketItems,
+                                            basketTotal,
+                                            deleteBasketItem,
+                                            open,
+                                            openBasket
+                                        }) => {
     const className = `prd-Basket${active ? ' prd-Basket-active' : ''}
     ${open && active ? ' prd-Basket-open' : ''}`;
 
@@ -34,6 +44,7 @@ const ProductBasket: React.FC<Props> = ({ active, closeBasket, basketItems, dele
                             {basketItems.map((item, index) => (
                                 <li key={item.id + index} className="prd-Basket_Item">
                                     <ProductCard
+                                        abv={item.abv}
                                         deleteItem={() => deleteBasketItem(index)}
                                         imageUrl={item.image_url}
                                         name={item.name}
@@ -46,7 +57,10 @@ const ProductBasket: React.FC<Props> = ({ active, closeBasket, basketItems, dele
                     </div>
 
                     <div className="prd-Basket_Footer">
-                        <Button onClick={() => console.log('payment')} text="Purchase"/>
+                        <Button
+                            onClick={() => console.log('payment')}
+                            text={`Purchase ${currencyFormat(basketTotal, 'GBP')}`}
+                        />
                     </div>
                 </div>
             </div>
