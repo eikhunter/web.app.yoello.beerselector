@@ -7,10 +7,11 @@ interface Props {
     imageUrl: string;
     name: string;
     tagline: string;
+    deleteItem?: () => void;
     small?: boolean;
 }
 
-const ProductCard: React.FC<Props> = ({ imageUrl, name, tagline, small }) => {
+const ProductCard: React.FC<Props> = ({ imageUrl, name, tagline, deleteItem, small }) => {
     return (
         <div className={small ? 'prd-Card prd-Card-small' : 'prd-Card'}>
             <div className="prd-Card_ImageContainer">
@@ -24,6 +25,10 @@ const ProductCard: React.FC<Props> = ({ imageUrl, name, tagline, small }) => {
                     <Arrow/>
                 </p>
             </div>
+
+            {deleteItem && (
+                <button onClick={deleteItem} className="prd-Card_Delete">x</button>
+            )}
         </div>
     );
 };

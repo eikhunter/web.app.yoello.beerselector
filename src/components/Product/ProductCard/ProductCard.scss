@@ -31,6 +31,7 @@
 
 .prd-Card_Body {
   margin-left: 32px;
+  margin-right: 16px;
 }
 
 .prd-Card_Title {
@@ -40,14 +41,19 @@
   line-height: 32px;
 
   .prd-Card-small & {
-    margin-bottom: 0;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 .prd-Card_Text {
   color: var(--Color_Grey);
+
+  .prd-Card-small & {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .prd-Card_Link {
@@ -66,4 +72,12 @@
   .prd-Card-small & {
     display: none;
   }
+}
+
+.prd-Card_Delete {
+  margin-left: auto;
+  background-color: transparent;
+  color: var(--Color_Red);
+  font-size: 26px;
+  border: none;
 }

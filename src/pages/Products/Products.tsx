@@ -66,8 +66,6 @@ class Products extends React.Component<Props, State> {
         const selectedProduct = productsStore.selectedProduct;
         const views = productsStore.views;
 
-        console.log(this.state);
-
         return (
             <div className="prd-Products">
                 <header className="prd-Products_Header">
@@ -111,6 +109,7 @@ class Products extends React.Component<Props, State> {
                 <ProductBasket
                     active={basketItems.length > 0}
                     basketItems={basketItems}
+                    deleteBasketItem={productsStore.deleteProductFromBasket}
                     closeBasket={this._closeBasket}
                     open={basketOpen}
                     openBasket={this._openBasket}

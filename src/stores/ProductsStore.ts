@@ -57,5 +57,10 @@ export default class ProductsStore {
 
     @action addProductToBasket = (product: Beer) => this.basketItems.push(product);
 
+    @action deleteProductFromBasket = (index: number) => {
+        console.log(index);
+        this.basketItems.splice(index, 1);
+    }
+
     @action onSelectProduct = (product: Beer) => this.selectedProduct = product;
 }
