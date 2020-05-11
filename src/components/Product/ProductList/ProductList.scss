@@ -1,0 +1,24 @@
+/*
+|--------------------------------------------------------------------------
+| List
+|--------------------------------------------------------------------------
+| @namespace: prd-
+|
+*/
+@import "../../../styles/app";
+
+.prd-List {
+  padding: 32px 0;
+}
+
+.prd-List_Inner {
+  @include Grid_Container;
+}
+
+.prd-List_Item {
+  margin-top: 48px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

@@ -47,22 +47,20 @@ $screen-xxlg-min: 1600px;
 |
 */
 @mixin Button {
-  min-width: 126px;
+  width: 100%;
   padding: 8px calc(var(--Grid_Gutter) * 2);
-
-  background-color: var(--Color_Brand);
-  border: 1px solid var(--Color_Brand);
+  background: var(--Color_Gradient);
   color: #fff;
-
-  font-size: 12px;
+  font-size: 14px;
+  height: 41px;
   line-height: 24px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1px;
   font-family: var(--Font_Family);
   cursor: pointer;
-
+  border: none;
+  border-radius: 84px;
   transition: background-color var(--Global_Transition),
   border var(--Global_Transition),
   color var(--Global_Transition), box-shadow var(--Global_Transition);

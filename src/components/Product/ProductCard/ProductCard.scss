@@ -1,0 +1,51 @@
+/*
+|--------------------------------------------------------------------------
+| Card
+|--------------------------------------------------------------------------
+| @namespace: prd-
+|
+*/
+@import "../../../styles/app";
+
+.prd-Card {
+  align-items: center;
+  display: flex;
+}
+
+.prd-Card_Image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.prd-Card_ImageContainer {
+  flex-shrink: 0;
+  width: 90px;
+  height: 180px;
+
+  .prd-Card-small & {
+    height: 90px;
+    width: 35px;
+  }
+}
+
+.prd-Card_Body {
+  margin-left: 32px;
+}
+
+.prd-Card_Title {
+  margin-bottom: 4px;
+  font-family: var(--Font_Family-noto);
+  font-size: 22px;
+  line-height: 32px;
+
+  .prd-Card-small & {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+}
+
+.prd-Card_Text {
+  color: var(--Color_Grey);
+}
+

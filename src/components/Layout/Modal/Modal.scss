@@ -1,0 +1,47 @@
+/*
+|--------------------------------------------------------------------------
+| Modal
+|--------------------------------------------------------------------------
+| @namespace: mdl-
+|
+*/
+@import "../../../styles/app";
+
+.mdl-Modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: opacity var(--Global_Transition), visibility var(--Global_Transition);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mdl-Modal-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mdl-Modal_Inner {
+  @include Grid_Container;
+}
+
+.mdl-Modal_Backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.mdl-Modal_Body {
+  position: relative;
+  width: 100%;
+}

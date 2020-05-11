@@ -1,5 +1,5 @@
-import RegisterStore from './RegisterStore';
+import ProductStore from './ProductsStore';
 
 export default () => ({
-    registerStore: new RegisterStore(),
+    productsStore: new ProductStore(),
 })

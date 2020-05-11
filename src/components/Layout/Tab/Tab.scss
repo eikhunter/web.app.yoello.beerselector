@@ -1,0 +1,27 @@
+/*
+|--------------------------------------------------------------------------
+| Tab
+|--------------------------------------------------------------------------
+| @namespace: tab-
+|
+*/
+.tab-Tab {
+  position: relative;
+  width: 100%;
+  padding: 11px 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  transition: color var(--Global_Transition);
+  background-color: transparent;
+  border: none;
+
+  .tab-Tabs_Item-active & {
+    color: #fff
+  }
+}
+
+.tab-Tab_Text {
+  position: relative;
+}

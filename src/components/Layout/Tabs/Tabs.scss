@@ -1,0 +1,41 @@
+/*
+|--------------------------------------------------------------------------
+| Tabs
+|--------------------------------------------------------------------------
+| @namespace: tab-
+|
+*/
+@import "../../../styles/app";
+
+.tab-Tabs {
+  padding: 12px 0;
+  background-color: var(--Color_Grey-light);
+}
+
+.tab-Tabs_Inner {
+  @include Grid_Container;
+}
+
+.tab-Tabs_Body {
+  position: relative;
+}
+
+.tab-Tabs_Items {
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.tab-Tabs_Item {
+  flex: 1;
+}
+
+.tab-Tabs_ActiveIndicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 100px;
+  background: var(--Color_Gradient);
+  transition: transform var(--Global_Transition);
+}

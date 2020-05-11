@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import initStore from './stores/Stores'
+import Products from './pages/Products/Products';
 
-import Register from './pages/Register/Register';
+import initStore from './stores/Stores'
 
 import './styles/app.scss';
 
@@ -11,7 +11,7 @@ const store = initStore();
 
 ReactDOM.render(
     <React.StrictMode>
-        <Register registerStore={store.registerStore}/>
+        <Products productsStore={store.productsStore}/>
     </React.StrictMode>,
     document.getElementById('root')
 );

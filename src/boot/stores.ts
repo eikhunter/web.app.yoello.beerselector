@@ -1,21 +1,21 @@
-import RegisterStore from '../stores/RegisterStore';
+import ProductsStore from '../stores/ProductsStore';
 
 export class RootStore {
-    register: RegisterStore;
+    products: ProductsStore;
 
     constructor() {
         this.setStores();
-        this.register = new RegisterStore();
+        this.products = new ProductsStore();
     }
 
     getStores = (): Stores => {
         return {
-            registerStore: this.register
+            productsStore: this.products
         };
     };
 
     setStores() {
-        this.register = new RegisterStore();
+        this.products = new ProductsStore();
     }
 }
 
@@ -25,5 +25,5 @@ export default (): Stores => {
 };
 
 export interface Stores {
-    registerStore: RegisterStore;
+    productsStore: ProductsStore;
 }
