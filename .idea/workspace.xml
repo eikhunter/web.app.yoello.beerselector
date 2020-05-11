@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56fa6fd4-7d3b-4cda-ba88-202054f36035" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Product/ProductBasket/ProductBasket.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductBasket/ProductBasket.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductCard/ProductCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductCard/ProductCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductCard/ProductCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductCard/ProductCard.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +84,7 @@
       <updated>1588586938110</updated>
       <workItem from="1588586941337" duration="33278000" />
       <workItem from="1589187537347" duration="11744000" />
-      <workItem from="1589200471575" duration="13923000" />
+      <workItem from="1589200471575" duration="14081000" />
     </task>
     <servers />
   </component>
