@@ -34,11 +34,18 @@ class Products extends React.Component<Props, State> {
         await productsStore.loadAllViews();
     }
 
+    componentDidUpdate(prevProps: Readonly<Props>, prevState: Readonly<State>, snapshot?: any): void {
+        const { basketOpen } = this.state;
+
+        if (prevProps.productsStore.basketItems.length === 0 && basketOpen) {
+            this.setState({ basketOpen: false })
+        }
+    }
+
     _addProductToBasket = (product: Beer) => {
         const { productsStore } = this.props;
 
         productsStore.addProductToBasket(product);
-        this.setState({ modalOpen: false });
     };
 
     _closeBasket = () => this.setState({ basketOpen: false });
@@ -46,7 +53,6 @@ class Products extends React.Component<Props, State> {
     _closeModal = () => this.setState({ modalOpen: false });
 
     _onActiveIndexChange = (index: number) => {
-        window.scrollTo(0,0);
         this.setState({ activeTabIndex: index });
     };
 

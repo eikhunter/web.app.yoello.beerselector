@@ -44,4 +44,13 @@
 .mdl-Modal_Body {
   position: relative;
   width: 100%;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform var(--Global_Transition) 0.18s,
+  opacity var(--Global_Transition) 0.18s;
+
+  .mdl-Modal-open & {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

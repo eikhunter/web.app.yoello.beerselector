@@ -8,10 +8,9 @@
 @import "../../../styles/app";
 
 .prd-List {
-  height: 100%;
+  height: 100vh;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  padding: 32px 0 102px;
+  padding: 142px 0 102px;
 }
 
 .prd-List_Inner {
